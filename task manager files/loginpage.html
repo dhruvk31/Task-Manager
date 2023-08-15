@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task manager</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="loginpagestyle.css">
+  </head>
+  <body>
+    <form>
+      <h1>Task Manager</h1>
+      <div class="container">
+        <input type="text" placeholder="Username" id="username" required>
+        <input type="password" placeholder="Password" id="password" required>	
+        <input type="submit" value="✓ " left="200px" onclick="return authenticate();" />
+      </div>
+      <span class=""><a href="forgotpassword.html"> Forgot password?</a></span>
+    </form>
+    <script> 
+      function authenticate(){
+    var authorised;
+    
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if(username == "abcd" && password == "pass"){
+      authorised = true
+      window.location.href = "file:///C:/Users/dhruv/Desktop/UI%20assignment/homepage.html";
+    }else{
+      authorised = false;
+      //alert user
+      alert("Sorry, username or password is incorrect.");
+    }
+
+    return authorised;
+}
+    </script>
+    <div style = "position:fixed;top:400px;right:250px"><br>
+     new user?<br>
+     <a href = "signuppage.html">Signup here </a>
+    </div>
+  </body>
+</html>

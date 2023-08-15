@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  border-bottom:3px solid black;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 40%;
+  background: #f1f1f1;
+}
+
+table{position:absolute;
+  left:220px;
+  top:250px;
+  width: 500px;}
+
+table,th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th{
+  padding: 20px;
+}
+td{
+  padding: 5px;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+#image{
+border:3px solid black;
+position:absolute;
+right: 170px;
+top:210px;
+}
+#profile{
+  
+  position:absolute;
+  right: 49px;
+  top:136px;
+  }
+#settings{
+   
+  position:absolute;
+  right: 17px;
+  top:135px;
+    }
+#calendar{
+  border:3px solid black;
+  position:absolute;
+  right: 20px;
+  top:400px;
+  }
+a{text-decoration: none;
+ color:black;}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 100%;
+  border-right:2px solid black;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  
+  border-right: black 3px;
+  padding: 20px;
+  width: 70%;
+  height: 100px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  width: 40%;
+  background: #f1f1f1;
+  margin-left: 150px; /* Add this line to center the input field horizontally */
+  display: block; /* Add this line to make the input field a block element */
+  
+}
+
+/* Style the submit button */
+form.example button {
+  float: none;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-left: 140px; /* Add this line to center the button horizontally */
+  display: block; /* Add this line to make the button a block element */
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

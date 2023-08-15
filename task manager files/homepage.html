@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task manager</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="homepagestyle.css">
+  </head>
+ <body>
+<header>
+  <h2>Task Manager</h2>
+</header>
+<section>
+  <nav><div><hr style="width:20%"><div><hr style="width:20%"><div><hr style="width:20%">
+<hr style="height:1px;border:none;color:#333;background-color:#333;width:100%">
+ <br><br><br><br><br><br><br><br><br><br><br><br><hr style = "height:3px;border:none;color:#333;background-color:#333;"> 
+ <div id="todayEvents"></div>
+ 
+ <hr><br><br><br><br><br><br><br><br>
+  </div>
+</nav>
+  <article>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+    <form class="example" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <form class="example" action="action_page.php">
+<table id="taskTable">
+<tr><th colspan="2"><h2><u><a href="taskmanager.html">TASKS</a></u></h2></th></tr>
+  <tr>
+    <td><b>Task name</b></td>
+    <td><b>Task due date</b></td>
+  </tr>
+</table>
+<div id="image"><img src="download.png" alt="Girl in a jacket" width="275" height="160"></div>
+<div id="profile" ><img src="profile.png" alt="d" width="22.5" height="20" onclick="myFunction()"></div>
+<script src="homepagescript.js">
+</script>
+<div id="settings"><img src="settings.png" alt="t" width="22.5" height="20"></div>
+<div id = "calendar"><img src="calendar.png" alt="Girl in a jacket" width="275" height="160"></div>
+<div></div>
+<div></div>
+
+
+  
+</form>
+
+  </article>
+</section>
+
+</body>
+</html>
